@@ -1,0 +1,183 @@
+body {
+    background-color: #f8f9fa;
+    padding: 20px;
+}
+.navbar {
+    margin-bottom: 20px;
+}
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.product-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    width: 30%;
+    box-sizing: border-box;
+    text-align: left;
+}
+.product-card img {
+    max-width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+.product-card h5 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+}
+.product-description {
+    font-size: 0.9rem;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: justify;
+    white-space: pre-line;
+}
+.product-price {
+    font-size: 1.2rem;
+    color: #e60000;
+    font-weight: bold;
+}
+.product-actions {
+    margin-top: 15px;
+}
+.product-actions .btn {
+    margin-right: 5px;
+}
+.filter-form {
+    margin-bottom: 20px;
+}
+/* Đổi màu khi di chuột qua tên sản phẩm và giá tiền */
+.product-name a,
+.product-price a {
+    color: #007bff; /* Màu chữ ban đầu */
+    text-decoration: none; /* Bỏ gạch chân */
+    transition: color 0.3s; /* Hiệu ứng đổi màu */
+}
+
+.product-name a:hover,
+.product-price a:hover {
+    color: #ff5733; /* Màu chữ khi di chuột */
+}
+
+/* Định dạng cho nút Mua hàng */
+.buy-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #28a745; /* Màu nền của nút */
+    color: #fff; /* Màu chữ của nút */
+    padding: 8px 12px;
+    border-radius: 5px; /* Bo tròn góc nút */
+    text-decoration: none; /* Bỏ gạch chân */
+    transition: background-color 0.3s; /* Hiệu ứng khi di chuột */
+}
+
+.buy-button:hover {
+    background-color: #218838; /* Màu nền khi di chuột */
+}
+
+/* Đảm bảo .product-card có position tương đối để định vị nút Mua hàng */
+.product-card {
+    position: relative;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    width: 30%;
+    box-sizing: border-box;
+    text-align: left;
+}
+/* Định dạng cho nút Giỏ hàng */
+.navbar .nav-link .badge {
+    background-color: #007bff; /* Màu nền của badge */
+    color: #fff; /* Màu chữ của badge */
+    border-radius: 50%; /* Làm badge tròn */
+    padding: 5px 10px; /* Khoảng cách trong của badge */
+    font-size: 0.75rem; /* Kích thước chữ của badge */
+}
+
+/* Định dạng cho nút Mua hàng */
+.buy-button {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    background-color: #28a745; /* Màu nền của nút */
+    color: #fff; /* Màu chữ của nút */
+    padding: 8px 12px;
+    border-radius: 5px; /* Bo tròn góc nút */
+    text-decoration: none; /* Bỏ gạch chân */
+    transition: background-color 0.3s; /* Hiệu ứng khi di chuột */
+}
+
+.buy-button:hover {
+    background-color: #218838; /* Màu nền khi di chuột */
+}
+
+
+/* Tùy chỉnh giao diện của các nút phân trang */
+/* Container của phân trang */
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Link phân trang */
+.pagination-link {
+    color: #007bff; /* Màu chữ của link */
+    background-color: #fff; /* Màu nền của link */
+    border: 1px solid #dee2e6; /* Viền của link */
+    padding: 8px 16px; /* Khoảng cách trong của link */
+    margin: 0 4px; /* Khoảng cách giữa các link */
+    text-decoration: none; /* Bỏ gạch chân */
+    border-radius: 4px; /* Bo tròn góc */
+    transition: background-color 0.3s, color 0.3s; /* Hiệu ứng khi di chuột */
+}
+
+/* Hiệu ứng khi di chuột qua link */
+.pagination-link:hover {
+    background-color: #e9ecef; /* Màu nền khi di chuột */
+    color: #0056b3; /* Màu chữ khi di chuột */
+}
+
+/* Link đang hoạt động */
+.pagination-link.active {
+    background-color: #007bff; /* Màu nền của link đang hoạt động */
+    color: #fff; /* Màu chữ của link đang hoạt động */
+    border-color: #007bff; /* Màu viền của link đang hoạt động */
+}
+/* CSS for limiting the height and hiding overflow */
+.product-description {
+    max-height: 60px; /* Initial height limit */
+    overflow: hidden; /* Hide overflow */
+    text-overflow: ellipsis; /* Show ellipsis for overflowing text */
+    white-space: pre-line; /* Maintain new lines */
+    position: relative; /* Required for positioning */
+    transition: max-height 0.5s ease; /* Smooth transition */
+}
+
+/* Expanded state */
+.product-description.expanded {
+    max-height: none; /* Remove height limit when expanded */
+}
+
+/* Style for the "read more" link */
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.read-more:hover {
+    color: #0056b3; /* Darker blue on hover */
+}

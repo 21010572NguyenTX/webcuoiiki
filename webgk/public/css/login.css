@@ -1,0 +1,56 @@
+/* Styling cho form login để căn giữa */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Chiều cao toàn màn hình */
+}
+
+.card {
+    margin-top: 50px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.card-header {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-footer {
+    padding: 15px;
+    background-color: #f8f9fa;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.alert ul {
+    margin: 0;
+    padding-left: 20px;
+}
+/* Styling cho liên kết đăng ký */
+.register-link {
+    margin-top: 15px; /* Khoảng cách phía trên liên kết */
+    font-size: 14px;
+}
+
+.register-link a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.register-link a:hover {
+    color: #0056b3;
+}

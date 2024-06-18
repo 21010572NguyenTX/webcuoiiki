@@ -1,0 +1,101 @@
+/* Đặt các thông số chung cho toàn bộ trang */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Styling cho phần footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    margin-top: 50px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+}
+
+.footer-section h4 {
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+    margin-bottom: 10px;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 5px;
+}
+
+.footer-section ul li a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #ddd;
+}
+
+.social-icons a {
+    margin-right: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+}
+
+.payment-icons img {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: column;
+}
+
+.newsletter input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+}
+
+.newsletter button {
+    padding: 10px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.newsletter button:hover {
+    background-color: #777;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #222;
+}
+
+.footer-bottom p {
+    margin: 0;
+}

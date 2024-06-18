@@ -1,0 +1,88 @@
+/* CSS cho container chứa giỏ hàng */
+.container {
+    max-width: 800px; /* Giới hạn chiều rộng của container */
+    margin: 0 auto; /* Căn giữa container */
+    padding: 20px; /* Đệm cho container */
+    background: #f9f9f9; /* Màu nền cho container */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1); /* Bóng cho container */
+    border-radius: 8px; /* Bo tròn góc */
+}
+
+/* Styling cho tiêu đề */
+.container h2 {
+    color: #333; /* Màu chữ cho tiêu đề */
+    text-align: center; /* Căn giữa tiêu đề */
+    margin-bottom: 20px; /* Khoảng cách dưới tiêu đề */
+}
+
+/* Styling cho bảng trong giỏ hàng */
+.table {
+    background: white; /* Màu nền cho bảng */
+    border-collapse: collapse; /* Loại bỏ khoảng cách giữa các ô */
+}
+
+.table th, .table td {
+    text-align: center; /* Căn giữa nội dung các ô */
+    padding: 8px; /* Đệm cho các ô */
+}
+
+.table thead {
+    background-color: #007bff; /* Màu nền cho tiêu đề bảng */
+    color: white; /* Màu chữ cho tiêu đề bảng */
+}
+
+.table tbody tr:nth-child(odd) {
+    background-color: #f2f2f2; /* Màu nền cho các hàng lẻ */
+}
+
+/* Styling cho nút xóa sản phẩm */
+.btn-danger {
+    background-color: #dc3545; /* Màu nền cho nút */
+    border: none; /* Không viền */
+    color: white; /* Màu chữ */
+}
+
+.btn-danger:hover {
+    background-color: #c82333; /* Màu khi hover */
+}
+
+/* Styling cho liên kết thanh toán */
+.container .a {
+    display: inline-block; /* Hiển thị dạng block với khả năng chỉnh sửa chiều rộng */
+    background-color: #28a745; /* Màu nền */
+    color: white; /* Màu chữ */
+    padding: 10px 20px; /* Đệm */
+    text-decoration: none; /* Không gạch chân */
+    border-radius: 5px; /* Bo góc */
+    text-align: center; /* Căn giữa nội dung */
+    margin-top: 20px; /* Khoảng cách trên */
+}
+
+.container .a:hover {
+    background-color: #218838; /* Màu khi hover */
+}
+
+/* Styling cho thông báo giỏ hàng trống */
+.container p {
+    text-align: center; /* Căn giữa văn bản */
+    color: #666; /* Màu chữ */
+}
+.product-info {
+    display: flex;
+    align-items: center; /* Căn giữa các mục theo chiều dọc */
+    justify-content: center; /* Căn giữa các mục theo chiều ngang */
+    gap: 10px; /* Khoảng cách giữa hình ảnh và tên sản phẩm */
+}
+
+.product-info img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.product-info a {
+    text-decoration: none; /* Bỏ gạch chân */
+    color: #007bff; /* Màu của liên kết */
+    font-weight: bold; /* Đặt in đậm cho tên sản phẩm */
+}

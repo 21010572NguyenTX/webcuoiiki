@@ -1,0 +1,24 @@
+/* CSS cho các liên kết trong giỏ hàng */
+.table a {
+    text-decoration: none;
+    color: inherit; /* Giữ nguyên màu chữ hoặc bạn có thể đặt màu khác theo ý muốn */
+}
+
+.table a:hover {
+    color: blue; /* Hoặc màu bạn muốn khi hover */
+    text-decoration: underline; /* Nếu bạn muốn thêm gạch chân khi hover */
+}
+
+/* Các CSS khác của bạn */
+.btn-success {
+    color: white;
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-success:hover {
+    color: white;
+    background-color: #218838;
+    border-color: #1e7e34;
+}
+

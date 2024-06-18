@@ -1,0 +1,112 @@
+/* Styling cho form register để căn giữa */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Chiều cao toàn màn hình */
+}
+
+.card {
+    margin-top: 50px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Bo góc nhẹ cho thẻ */
+}
+
+.card-header {
+    background-color: #007bff;
+    color: #fff;
+    text-align: center;
+    padding: 15px;
+    border-radius: 8px 8px 0 0; /* Bo góc phía trên */
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-footer {
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 0 0 8px 8px; /* Bo góc phía dưới */
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-radius: 4px; /* Bo góc cho nút */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Styling cho các nhóm form */
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%; /* Sử dụng toàn bộ chiều rộng của container */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px; /* Bo góc cho input */
+    font-size: 14px;
+    background-color: #fafafa;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+    border-color: #007bff;
+    background-color: #eef5ff; /* Màu nền khi focus */
+}
+
+/* Styling cho liên kết đăng nhập */
+.register-link {
+    margin-top: 20px; /* Tăng khoảng cách phía trên liên kết */
+    font-size: 14px;
+    text-align: center;
+}
+
+.register-link a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.register-link a:hover {
+    color: #0056b3;
+}
+
+/* Styling cho thông báo lỗi */
+.alert {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: left;
+    margin-bottom: 20px; /* Tăng khoảng cách phía dưới */
+}
+
+.alert ul {
+    margin: 0;
+    padding-left: 20px;
+}
+
+.alert li {
+    list-style: none;
+    font-size: 14px;
+}
